@@ -1,25 +1,25 @@
 .flex-container {
-    display: flex;
+  display: flex;
   flex-direction: row;
   /* background-color: red; */
   padding: 0;
   margin: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .nav-left {
-    display: flex;
-    height: 100%;
-    list-style-type: none;
+  display: flex;
+  height: 100%;
+  list-style-type: none;
   margin-right: auto;
   justify-content: space-evenly;
   gap: 1rem;
   /* background-color: blue; */
 }
 .nav-right {
-    display: flex;
-    height: 100%;
-    margin-left: auto;
-    justify-content: space-evenly;
-    gap: 1rem;
-    /* background-color: green; */
+  display: flex;
+  height: 100%;
+  margin-left: auto;
+  justify-content: space-evenly;
+  gap: 1rem;
+  /* background-color: green; */
 }
