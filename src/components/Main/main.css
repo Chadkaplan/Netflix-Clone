@@ -1,0 +1,11 @@
+.movie-row{
+    display: flex;
+}
+.label-title{
+    color: #e5e5e5;
+    line-height: 1.25vw;
+      font-size: 1.4vw;
+  }
+  .movie-icon{
+      margin: 1rem;
+  }

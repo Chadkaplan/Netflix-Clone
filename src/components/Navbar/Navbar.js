@@ -1,15 +1,16 @@
 import React from "react";
 import "./navbar.css";
+import logo from "./netflixlogo.jpg"
 
 export default function Navbar() {
   return (
     <header className="flex-container">
       <ul className="nav-left">
-        {/* <a href="./netflixlogo.jpg"></a> */}
+        <img className="netflix-logo" src={logo}></img>
         <li className="nav-item">Home</li>
         <li className="nav-item">Tv Shows</li>
         <li className="nav-item">Movies</li>
-        <li className="nav-item">New & Popular</li>
+        <li className="nav-item">New &amp; Popular</li>
         <li className="nav-item">My List</li>
       </ul>
       <div className="nav-right">

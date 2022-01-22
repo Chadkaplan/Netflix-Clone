@@ -1,178 +1,178 @@
 [
-  { "id": 1, "title": "Nine Deaths of the Ninja", "genre": "Action" },
-  { "id": 2, "title": "Savage Nights (Nuits fauves, Les)", "genre": "Drama" },
+  { "id": 1, "title": "Nine Deaths of the Ninja","image" : "https://via.placeholder.com/150", "genre": "Action" },
+  { "id": 2, "title": "Savage Nights (Nuits fauves, Les)","image" : "https://via.placeholder.com/150", "genre": "Drama" },
   {
     "id": 3,
     "title": "Frankenweenie",
-    "genre": "Animation|Comedy|Horror|IMAX"
+   "image" : "https://via.placeholder.com/150", "genre": "Animation|Comedy|Horror|IMAX"
   },
   {
     "id": 4,
     "title": "Crawling Eye, The (a.k.a. Trollenberg Terror, The)",
-    "genre": "Horror|Sci-Fi"
+   "image" : "https://via.placeholder.com/150", "genre": "Horror|Sci-Fi"
   },
   {
     "id": 5,
     "title": "Enchanted",
-    "genre": "Adventure|Animation|Children|Comedy|Fantasy|Musical|Romance"
+   "image" : "https://via.placeholder.com/150", "genre": "Adventure|Animation|Children|Comedy|Fantasy|Musical|Romance"
   },
-  { "id": 6, "title": "5 Broken Cameras", "genre": "Documentary" },
-  { "id": 7, "title": "Mulan", "genre": "Action|Adventure|Drama|Romance" },
-  { "id": 8, "title": "Tree Grows in Brooklyn, A", "genre": "Drama" },
+  { "id": 6, "title": "5 Broken Cameras","image" : "https://via.placeholder.com/150", "genre": "Documentary" },
+  { "id": 7, "title": "Mulan","image" : "https://via.placeholder.com/150", "genre": "Action|Adventure|Drama|Romance" },
+  { "id": 8, "title": "Tree Grows in Brooklyn, A","image" : "https://via.placeholder.com/150", "genre": "Drama" },
   {
     "id": 9,
     "title": "8 Days to Premiere (8 päivää ensi-iltaan)",
-    "genre": "Comedy|Fantasy|Romance"
+   "image" : "https://via.placeholder.com/150", "genre": "Comedy|Fantasy|Romance"
   },
   {
     "id": 10,
     "title": "Dana Carvey: Squatting Monkeys Tell No Lies",
-    "genre": "Comedy"
+   "image" : "https://via.placeholder.com/150", "genre": "Comedy"
   },
-  { "id": 11, "title": "Outside Providence", "genre": "Comedy" },
+  { "id": 11, "title": "Outside Providence","image" : "https://via.placeholder.com/150", "genre": "Comedy" },
   {
     "id": 12,
     "title": "The Hound of the Baskervilles",
-    "genre": "Crime|Drama|Horror|Mystery"
+   "image" : "https://via.placeholder.com/150", "genre": "Crime|Drama|Horror|Mystery"
   },
-  { "id": 13, "title": "Divergent", "genre": "Adventure|Romance|Sci-Fi|IMAX" },
-  { "id": 14, "title": "Vampire Academy", "genre": "Action|Comedy|Fantasy" },
+  { "id": 13, "title": "Divergent","image" : "https://via.placeholder.com/150", "genre": "Adventure|Romance|Sci-Fi|IMAX" },
+  { "id": 14, "title": "Vampire Academy","image" : "https://via.placeholder.com/150", "genre": "Action|Comedy|Fantasy" },
   {
     "id": 15,
     "title": "Men Who Made the Movies: Samuel Fuller, The",
-    "genre": "Documentary"
+   "image" : "https://via.placeholder.com/150", "genre": "Documentary"
   },
-  { "id": 16, "title": "Bounty Hunter, The", "genre": "Action|Comedy|Romance" },
-  { "id": 17, "title": "For Your Consideration", "genre": "Comedy" },
-  { "id": 18, "title": "Captain Kidd", "genre": "Action|Adventure|Drama" },
-  { "id": 19, "title": "The Overnight", "genre": "Comedy" },
-  { "id": 20, "title": "Senseless", "genre": "Comedy" },
+  { "id": 16, "title": "Bounty Hunter, The","image" : "https://via.placeholder.com/150", "genre": "Action|Comedy|Romance" },
+  { "id": 17, "title": "For Your Consideration","image" : "https://via.placeholder.com/150", "genre": "Comedy" },
+  { "id": 18, "title": "Captain Kidd","image" : "https://via.placeholder.com/150", "genre": "Action|Adventure|Drama" },
+  { "id": 19, "title": "The Overnight","image" : "https://via.placeholder.com/150", "genre": "Comedy" },
+  { "id": 20, "title": "Senseless","image" : "https://via.placeholder.com/150", "genre": "Comedy" },
   {
     "id": 21,
     "title": "Better Living Through Chemistry",
-    "genre": "Comedy|Drama"
+   "image" : "https://via.placeholder.com/150", "genre": "Comedy|Drama"
   },
   {
     "id": 22,
     "title": "Grand Illusion (La grande illusion)",
-    "genre": "Drama|War"
+   "image" : "https://via.placeholder.com/150", "genre": "Drama|War"
   },
-  { "id": 23, "title": "Limelight", "genre": "Comedy|Drama|Romance" },
-  { "id": 24, "title": "Day After, The", "genre": "Drama|Sci-Fi" },
+  { "id": 23, "title": "Limelight","image" : "https://via.placeholder.com/150", "genre": "Comedy|Drama|Romance" },
+  { "id": 24, "title": "Day After, The","image" : "https://via.placeholder.com/150", "genre": "Drama|Sci-Fi" },
   {
     "id": 25,
     "title": "Industrial Symphony No. 1: The Dream of the Brokenhearted",
-    "genre": "Drama"
+   "image" : "https://via.placeholder.com/150", "genre": "Drama"
   },
-  { "id": 26, "title": "Boys", "genre": "Drama" },
-  { "id": 27, "title": "Paziraie Sadeh", "genre": "Drama" },
-  { "id": 28, "title": "Clapham Junction", "genre": "Drama" },
-  { "id": 29, "title": "Hearts in Atlantis", "genre": "Drama" },
-  { "id": 30, "title": "Beneath the 12-Mile Reef", "genre": "Adventure" },
-  { "id": 31, "title": "Eva", "genre": "Drama|Fantasy|Sci-Fi" },
-  { "id": 32, "title": "Burning, The", "genre": "Horror" },
-  { "id": 33, "title": "Too Many Girls", "genre": "Comedy|Musical" },
+  { "id": 26, "title": "Boys","image" : "https://via.placeholder.com/150", "genre": "Drama" },
+  { "id": 27, "title": "Paziraie Sadeh","image" : "https://via.placeholder.com/150", "genre": "Drama" },
+  { "id": 28, "title": "Clapham Junction","image" : "https://via.placeholder.com/150", "genre": "Drama" },
+  { "id": 29, "title": "Hearts in Atlantis","image" : "https://via.placeholder.com/150", "genre": "Drama" },
+  { "id": 30, "title": "Beneath the 12-Mile Reef","image" : "https://via.placeholder.com/150", "genre": "Adventure" },
+  { "id": 31, "title": "Eva","image" : "https://via.placeholder.com/150", "genre": "Drama|Fantasy|Sci-Fi" },
+  { "id": 32, "title": "Burning, The","image" : "https://via.placeholder.com/150", "genre": "Horror" },
+  { "id": 33, "title": "Too Many Girls","image" : "https://via.placeholder.com/150", "genre": "Comedy|Musical" },
   {
     "id": 34,
     "title": "Of Snails and Men (Despre oameni si melci)",
-    "genre": "Comedy"
+   "image" : "https://via.placeholder.com/150", "genre": "Comedy"
   },
-  { "id": 35, "title": "So Dear to My Heart", "genre": "Children|Drama" },
-  { "id": 36, "title": "Child's Play 2", "genre": "Horror|Thriller" },
-  { "id": 37, "title": "Cloudland", "genre": "Animation" },
-  { "id": 38, "title": "Kung Fu Hustle (Gong fu)", "genre": "Action|Comedy" },
-  { "id": 39, "title": "So Much Water", "genre": "Comedy|Drama" },
-  { "id": 40, "title": "Love and Other Catastrophes", "genre": "Romance" },
-  { "id": 41, "title": "Next of Kin", "genre": "Action|Crime|Thriller" },
-  { "id": 42, "title": "Zone, The (La Zona)", "genre": "Drama|Thriller" },
-  { "id": 43, "title": "Tank on the Moon", "genre": "Documentary" },
-  { "id": 44, "title": "300 Spartans, The", "genre": "Adventure|Drama|War" },
-  { "id": 45, "title": "Scream", "genre": "Comedy|Horror|Mystery|Thriller" },
-  { "id": 46, "title": "Ants in the Pants", "genre": "Comedy|Romance" },
-  { "id": 47, "title": "Heart of Glass (Herz aus Glas)", "genre": "Drama" },
-  { "id": 48, "title": "Fastest Gun Alive, The", "genre": "Western" },
-  { "id": 49, "title": "Private Lessons", "genre": "Comedy" },
-  { "id": 50, "title": "Haunter", "genre": "Horror|Mystery|Thriller" },
-  { "id": 51, "title": "Mondo Cane", "genre": "Documentary" },
-  { "id": 52, "title": "Angry Red Planet, The", "genre": "Sci-Fi" },
-  { "id": 53, "title": "Just Imagine", "genre": "Musical|Sci-Fi" },
-  { "id": 54, "title": "Hellraiser: Hellseeker", "genre": "Horror" },
-  { "id": 55, "title": "For Richer or Poorer", "genre": "Comedy" },
-  { "id": 56, "title": "All in a Night's Work", "genre": "Comedy" },
+  { "id": 35, "title": "So Dear to My Heart","image" : "https://via.placeholder.com/150", "genre": "Children|Drama" },
+  { "id": 36, "title": "Child's Play 2","image" : "https://via.placeholder.com/150", "genre": "Horror|Thriller" },
+  { "id": 37, "title": "Cloudland","image" : "https://via.placeholder.com/150", "genre": "Animation" },
+  { "id": 38, "title": "Kung Fu Hustle (Gong fu)","image" : "https://via.placeholder.com/150", "genre": "Action|Comedy" },
+  { "id": 39, "title": "So Much Water","image" : "https://via.placeholder.com/150", "genre": "Comedy|Drama" },
+  { "id": 40, "title": "Love and Other Catastrophes","image" : "https://via.placeholder.com/150", "genre": "Romance" },
+  { "id": 41, "title": "Next of Kin","image" : "https://via.placeholder.com/150", "genre": "Action|Crime|Thriller" },
+  { "id": 42, "title": "Zone, The (La Zona)","image" : "https://via.placeholder.com/150", "genre": "Drama|Thriller" },
+  { "id": 43, "title": "Tank on the Moon","image" : "https://via.placeholder.com/150", "genre": "Documentary" },
+  { "id": 44, "title": "300 Spartans, The","image" : "https://via.placeholder.com/150", "genre": "Adventure|Drama|War" },
+  { "id": 45, "title": "Scream","image" : "https://via.placeholder.com/150", "genre": "Comedy|Horror|Mystery|Thriller" },
+  { "id": 46, "title": "Ants in the Pants","image" : "https://via.placeholder.com/150", "genre": "Comedy|Romance" },
+  { "id": 47, "title": "Heart of Glass (Herz aus Glas)","image" : "https://via.placeholder.com/150", "genre": "Drama" },
+  { "id": 48, "title": "Fastest Gun Alive, The","image" : "https://via.placeholder.com/150", "genre": "Western" },
+  { "id": 49, "title": "Private Lessons","image" : "https://via.placeholder.com/150", "genre": "Comedy" },
+  { "id": 50, "title": "Haunter","image" : "https://via.placeholder.com/150", "genre": "Horror|Mystery|Thriller" },
+  { "id": 51, "title": "Mondo Cane","image" : "https://via.placeholder.com/150", "genre": "Documentary" },
+  { "id": 52, "title": "Angry Red Planet, The","image" : "https://via.placeholder.com/150", "genre": "Sci-Fi" },
+  { "id": 53, "title": "Just Imagine","image" : "https://via.placeholder.com/150", "genre": "Musical|Sci-Fi" },
+  { "id": 54, "title": "Hellraiser: Hellseeker","image" : "https://via.placeholder.com/150", "genre": "Horror" },
+  { "id": 55, "title": "For Richer or Poorer","image" : "https://via.placeholder.com/150", "genre": "Comedy" },
+  { "id": 56, "title": "All in a Night's Work","image" : "https://via.placeholder.com/150", "genre": "Comedy" },
   {
     "id": 57,
     "title": "Star Wars: Episode V - The Empire Strikes Back",
-    "genre": "Action|Adventure|Sci-Fi"
+   "image" : "https://via.placeholder.com/150", "genre": "Action|Adventure|Sci-Fi"
   },
-  { "id": 58, "title": "Super Duper Alice Cooper", "genre": "Documentary" },
-  { "id": 59, "title": "Five Pennies, The", "genre": "Drama" },
-  { "id": 60, "title": "Aurora Borealis", "genre": "Drama|Romance" },
-  { "id": 61, "title": "People Like Us", "genre": "Drama" },
-  { "id": 62, "title": "My Man Godfrey", "genre": "Comedy|Romance" },
-  { "id": 63, "title": "Dirty Deeds", "genre": "Comedy" },
-  { "id": 64, "title": "Mr. Brooks", "genre": "Crime|Drama|Thriller" },
-  { "id": 65, "title": "Crows Zero (Kurôzu zero)", "genre": "Action" },
-  { "id": 66, "title": "Grumpier Old Men", "genre": "Comedy|Romance" },
-  { "id": 67, "title": "Bedazzled", "genre": "Comedy" },
-  { "id": 68, "title": "Seize the Day", "genre": "Drama" },
-  { "id": 69, "title": "Where's Poppa?", "genre": "Comedy" },
-  { "id": 70, "title": "Los Flamencos", "genre": "Comedy" },
-  { "id": 71, "title": "Holes in My Shoes", "genre": "Documentary" },
-  { "id": 72, "title": "Perfume", "genre": "Comedy|Drama" },
-  { "id": 73, "title": "Carnival of Souls", "genre": "Horror|Thriller" },
+  { "id": 58, "title": "Super Duper Alice Cooper","image" : "https://via.placeholder.com/150", "genre": "Documentary" },
+  { "id": 59, "title": "Five Pennies, The","image" : "https://via.placeholder.com/150", "genre": "Drama" },
+  { "id": 60, "title": "Aurora Borealis","image" : "https://via.placeholder.com/150", "genre": "Drama|Romance" },
+  { "id": 61, "title": "People Like Us","image" : "https://via.placeholder.com/150", "genre": "Drama" },
+  { "id": 62, "title": "My Man Godfrey","image" : "https://via.placeholder.com/150", "genre": "Comedy|Romance" },
+  { "id": 63, "title": "Dirty Deeds","image" : "https://via.placeholder.com/150", "genre": "Comedy" },
+  { "id": 64, "title": "Mr. Brooks","image" : "https://via.placeholder.com/150", "genre": "Crime|Drama|Thriller" },
+  { "id": 65, "title": "Crows Zero (Kurôzu zero)","image" : "https://via.placeholder.com/150", "genre": "Action" },
+  { "id": 66, "title": "Grumpier Old Men","image" : "https://via.placeholder.com/150", "genre": "Comedy|Romance" },
+  { "id": 67, "title": "Bedazzled","image" : "https://via.placeholder.com/150", "genre": "Comedy" },
+  { "id": 68, "title": "Seize the Day","image" : "https://via.placeholder.com/150", "genre": "Drama" },
+  { "id": 69, "title": "Where's Poppa?","image" : "https://via.placeholder.com/150", "genre": "Comedy" },
+  { "id": 70, "title": "Los Flamencos","image" : "https://via.placeholder.com/150", "genre": "Comedy" },
+  { "id": 71, "title": "Holes in My Shoes","image" : "https://via.placeholder.com/150", "genre": "Documentary" },
+  { "id": 72, "title": "Perfume","image" : "https://via.placeholder.com/150", "genre": "Comedy|Drama" },
+  { "id": 73, "title": "Carnival of Souls","image" : "https://via.placeholder.com/150", "genre": "Horror|Thriller" },
   {
     "id": 74,
     "title": "Samouraï, Le (Godson, The)",
-    "genre": "Crime|Drama|Thriller"
+   "image" : "https://via.placeholder.com/150", "genre": "Crime|Drama|Thriller"
   },
-  { "id": 75, "title": "Yonkers Joe", "genre": "Drama" },
-  { "id": 76, "title": "Dragon: The Bruce Lee Story", "genre": "Action|Drama" },
-  { "id": 77, "title": "Manny & Lo", "genre": "Drama" },
-  { "id": 78, "title": "All Access", "genre": "Documentary|Musical|IMAX" },
+  { "id": 75, "title": "Yonkers Joe","image" : "https://via.placeholder.com/150", "genre": "Drama" },
+  { "id": 76, "title": "Dragon: The Bruce Lee Story","image" : "https://via.placeholder.com/150", "genre": "Action|Drama" },
+  { "id": 77, "title": "Manny & Lo","image" : "https://via.placeholder.com/150", "genre": "Drama" },
+  { "id": 78, "title": "All Access","image" : "https://via.placeholder.com/150", "genre": "Documentary|Musical|IMAX" },
   {
     "id": 79,
     "title": "The Death and Life of Bobby Z",
-    "genre": "Action|Crime|Drama|Thriller"
+   "image" : "https://via.placeholder.com/150", "genre": "Action|Crime|Drama|Thriller"
   },
   {
     "id": 80,
     "title": "Like Stars on Earth (Taare Zameen Par)",
-    "genre": "Drama"
+   "image" : "https://via.placeholder.com/150", "genre": "Drama"
   },
-  { "id": 81, "title": "Taxi 2", "genre": "Action|Comedy" },
-  { "id": 82, "title": "Knick Knack", "genre": "Animation|Children" },
-  { "id": 83, "title": "Ivory Tower", "genre": "Documentary" },
-  { "id": 84, "title": "Beware of Pity", "genre": "Drama|Romance" },
+  { "id": 81, "title": "Taxi 2","image" : "https://via.placeholder.com/150", "genre": "Action|Comedy" },
+  { "id": 82, "title": "Knick Knack","image" : "https://via.placeholder.com/150", "genre": "Animation|Children" },
+  { "id": 83, "title": "Ivory Tower","image" : "https://via.placeholder.com/150", "genre": "Documentary" },
+  { "id": 84, "title": "Beware of Pity","image" : "https://via.placeholder.com/150", "genre": "Drama|Romance" },
   {
     "id": 85,
     "title": "Flying Swords of Dragon Gate, The (Long men fei jia)",
-    "genre": "Action|Adventure|IMAX"
+   "image" : "https://via.placeholder.com/150", "genre": "Action|Adventure|IMAX"
   },
-  { "id": 86, "title": "Standing Up", "genre": "Adventure|Children" },
-  { "id": 87, "title": "Kids Return (Kizzu ritân)", "genre": "Drama" },
-  { "id": 88, "title": "Great McGinty, The", "genre": "Comedy" },
-  { "id": 89, "title": "This Movie Is Broken", "genre": "Drama|Romance" },
-  { "id": 90, "title": "Emotion", "genre": "Comedy|Horror" },
-  { "id": 91, "title": "Nekromantik 2", "genre": "Horror" },
+  { "id": 86, "title": "Standing Up","image" : "https://via.placeholder.com/150", "genre": "Adventure|Children" },
+  { "id": 87, "title": "Kids Return (Kizzu ritân)","image" : "https://via.placeholder.com/150", "genre": "Drama" },
+  { "id": 88, "title": "Great McGinty, The","image" : "https://via.placeholder.com/150", "genre": "Comedy" },
+  { "id": 89, "title": "This Movie Is Broken","image" : "https://via.placeholder.com/150", "genre": "Drama|Romance" },
+  { "id": 90, "title": "Emotion","image" : "https://via.placeholder.com/150", "genre": "Comedy|Horror" },
+  { "id": 91, "title": "Nekromantik 2","image" : "https://via.placeholder.com/150", "genre": "Horror" },
   {
     "id": 92,
     "title": "Terrible Kids (Enfants terribles, Les) (Strange Ones, The)",
-    "genre": "Drama"
+   "image" : "https://via.placeholder.com/150", "genre": "Drama"
   },
-  { "id": 93, "title": "Everything Will Be Fine", "genre": "Drama|Thriller" },
-  { "id": 94, "title": "Lincoln", "genre": "Drama|War" },
-  { "id": 95, "title": "Crisis", "genre": "Drama|Thriller" },
+  { "id": 93, "title": "Everything Will Be Fine","image" : "https://via.placeholder.com/150", "genre": "Drama|Thriller" },
+  { "id": 94, "title": "Lincoln","image" : "https://via.placeholder.com/150", "genre": "Drama|War" },
+  { "id": 95, "title": "Crisis","image" : "https://via.placeholder.com/150", "genre": "Drama|Thriller" },
   {
     "id": 96,
     "title": "Counter Investigation (Contre-enquête)",
-    "genre": "Crime|Drama"
+   "image" : "https://via.placeholder.com/150", "genre": "Crime|Drama"
   },
-  { "id": 97, "title": "Newest Pledge, The", "genre": "Comedy" },
-  { "id": 98, "title": "Victim", "genre": "Crime|Drama" },
+  { "id": 97, "title": "Newest Pledge, The","image" : "https://via.placeholder.com/150", "genre": "Comedy" },
+  { "id": 98, "title": "Victim","image" : "https://via.placeholder.com/150", "genre": "Crime|Drama" },
   {
     "id": 99,
     "title": "Ghost Rider: Spirit of Vengeance",
-    "genre": "Action|Fantasy|Thriller"
+   "image" : "https://via.placeholder.com/150", "genre": "Action|Fantasy|Thriller"
   },
-  { "id": 100, "title": "Torpedo Run", "genre": "Drama|War" }
+  { "id": 100, "title": "Torpedo Run","image" : "https://via.placeholder.com/150", "genre": "Drama|War" }
 ]
