@@ -1,11 +1,21 @@
-.movie-row{
-    display: flex;
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
-.label-title{
-    color: #e5e5e5;
-    line-height: 1.25vw;
-      font-size: 1.4vw;
-  }
-  .movie-icon{
-      margin: 1rem;
-  }
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+.label-title {
+  color: #e5e5e5;
+  line-height: 1.25rem;
+  font-size: 1.4rem;
+}
+.movie-icon {
+  margin: 1rem;
+}

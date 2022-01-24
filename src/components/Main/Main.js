@@ -4,16 +4,14 @@ import "./main.css";
 
 export default function Main() {
   return (
-    <section className="movie-row">
-      <label className="label-title">Drama</label>
-      <br></br>
-      {movieData.map((movie) => {
-        return (
-          <div className="movie-icon" key={movie.id}>
-            <img src={movie.image}></img>
-          </div>
-        );
-      })}
+    <section className="row">
+      <label className="label-title row">Drama</label>
+      <br />
+      {movieData.map((movie) => (
+        <div className="movie-icon" key={movie.id}>
+          <img src={movie.image} alt={movie.title} />
+        </div>
+      ))}
     </section>
   );
 }
