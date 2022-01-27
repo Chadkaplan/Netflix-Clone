@@ -1,4 +1,4 @@
-.flex-container {
+.navbar {
   display: flex;
   flex-direction: row;
   background-color: black;
@@ -6,24 +6,21 @@
   margin: 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.nav-left {
+.navbar--group {
   display: flex;
   height: 100%;
   list-style-type: none;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+.navbar--group-left {
   margin-right: auto;
-  justify-content: space-evenly;
-  gap: 1rem;
-  /* background-color: blue; */
+  padding-top: 20px;
 }
-.nav-right {
-  display: flex;
-  height: 100%;
+.navbar--group-right {
   margin-left: auto;
-  justify-content: space-evenly;
-  gap: 1rem;
-  /* background-color: green; */
 }
-.netflix-logo {
+.netflixlogo {
   height: 3rem;
   width: 5rem;
 }

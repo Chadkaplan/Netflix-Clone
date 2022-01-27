@@ -5,10 +5,10 @@ import "./main.css";
 export default function Main() {
   return (
     <section className="row">
-      <label className="label-title row">Drama</label>
+      <label className="label--title row">Drama</label>
       <br />
       {movieData.map((movie) => (
-        <div className="movie-icon" key={movie.id}>
+        <div className="movie--icon" key={movie.id}>
           <img src={movie.image} alt={movie.title} />
         </div>
       ))}
