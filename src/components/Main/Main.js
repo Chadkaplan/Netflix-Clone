@@ -3,15 +3,20 @@ import movieData from "../../data/movies.json";
 import "./main.css";
 
 export default function Main() {
+  const uniqueGenre = [];
+  movieData.map((movie) => {
+    if (uniqueGenre.indexOf(movie.genre) === -1) {
+      uniqueGenre.push(movie.genre);
+    }
+  });
+  console.log(uniqueGenre);
   return (
-    <section className="row">
-      <label className="label--title row">Drama</label>
-      <br />
+    <div>
       {movieData.map((movie) => (
         <div className="movie--icon" key={movie.id}>
           <img src={movie.image} alt={movie.title} />
         </div>
       ))}
-    </section>
+    </div>
   );
 }
