@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <header className="navbar">
       <ul className="navbar--group navbar--group-left">
-        <img className="netflixlogo" src={logo} />
+        <img className="netflixlogo" src={logo} alt="netflix" />
         <li className="nav--item">Home</li>
         <li className="nav--item">Tv Shows</li>
         <li className="nav--item">Movies</li>

@@ -1,22 +1,19 @@
 import React from "react";
 import movieData from "../../data/movies.json";
 import "./main.css";
+import Movie from "../Movie/Movie";
+
+// uniqueGenre.some((genre) => genre === movie.genre)
 
 export default function Main() {
-  const uniqueGenre = [];
-  movieData.map((movie) => {
-    if (uniqueGenre.indexOf(movie.genre) === -1) {
-      uniqueGenre.push(movie.genre);
+  let uniqueGenreArray = [];
+  movieData.forEach((movie) => {
+    if (!uniqueGenreArray.some((genre) => genre === movie.genre)) {
+      uniqueGenreArray.push(movie.genre);
     }
   });
-  console.log(uniqueGenre);
+  console.log(uniqueGenreArray);
   return (
-    <div>
-      {movieData.map((movie) => (
-        <div className="movie--icon" key={movie.id}>
-          <img src={movie.image} alt={movie.title} />
-        </div>
-      ))}
-    </div>
+<Movie/>
   );
 }
