@@ -1,3 +1,7 @@
+.center {
+  margin: 0 auto;
+  width: fit-content;
+}
 /* Generic flex rows and columns */
 .row {
   display: flex;

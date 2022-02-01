@@ -8,12 +8,15 @@ import Movie from "../Movie/Movie";
 export default function Main() {
   let uniqueGenreArray = [];
   movieData.forEach((movie) => {
+    // split on |
     if (!uniqueGenreArray.some((genre) => genre === movie.genre)) {
       uniqueGenreArray.push(movie.genre);
     }
   });
   console.log(uniqueGenreArray);
   return (
-<Movie/>
+    <div className="center">
+      <Movie />
+    </div>
   );
 }

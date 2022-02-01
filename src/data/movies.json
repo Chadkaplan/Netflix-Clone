@@ -1,178 +1,602 @@
 [
-  { "id": 1, "title": "Nine Deaths of the Ninja","image" : "../../../images/crazystupidlove.jpg", "genre": "Action" },
-  { "id": 2, "title": "Savage Nights (Nuits fauves, Les)","image" : "../../../images/crazystupidlove.jpg", "genre": "Drama" },
+  {
+    "id": 1,
+    "title": "Nine Deaths of the Ninja",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Action"
+  },
+  {
+    "id": 2,
+    "title": "Savage Nights (Nuits fauves, Les)",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Drama"
+  },
   {
     "id": 3,
     "title": "Frankenweenie",
-   "image" : "../../../images/crazystupidlove.jpg", "genre": "Animation|Comedy|Horror|IMAX"
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Animation|Comedy|Horror|IMAX"
   },
   {
     "id": 4,
     "title": "Crawling Eye, The (a.k.a. Trollenberg Terror, The)",
-   "image" : "../../../images/crazystupidlove.jpg", "genre": "Horror|Sci-Fi"
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Horror|Sci-Fi"
   },
   {
     "id": 5,
     "title": "Enchanted",
-   "image" : "../../../images/crazystupidlove.jpg", "genre": "Adventure|Animation|Children|Comedy|Fantasy|Musical|Romance"
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Adventure|Animation|Children|Comedy|Fantasy|Musical|Romance"
   },
-  { "id": 6, "title": "5 Broken Cameras","image" : "../../../images/crazystupidlove.jpg", "genre": "Documentary" },
-  { "id": 7, "title": "Mulan","image" : "../../../images/crazystupidlove.jpg", "genre": "Action|Adventure|Drama|Romance" },
-  { "id": 8, "title": "Tree Grows in Brooklyn, A","image" : "../../../images/crazystupidlove.jpg", "genre": "Drama" },
+  {
+    "id": 6,
+    "title": "5 Broken Cameras",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Documentary"
+  },
+  {
+    "id": 7,
+    "title": "Mulan",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Action|Adventure|Drama|Romance"
+  },
+  {
+    "id": 8,
+    "title": "Tree Grows in Brooklyn, A",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Drama"
+  },
   {
     "id": 9,
     "title": "8 Days to Premiere (8 päivää ensi-iltaan)",
-   "image" : "../../../images/crazystupidlove.jpg", "genre": "Comedy|Fantasy|Romance"
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Comedy|Fantasy|Romance"
   },
   {
     "id": 10,
     "title": "Dana Carvey: Squatting Monkeys Tell No Lies",
-   "image" : "../../../images/crazystupidlove.jpg", "genre": "Comedy"
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Comedy"
   },
-  { "id": 11, "title": "Outside Providence","image" : "../../../images/crazystupidlove.jpg", "genre": "Comedy" },
+  {
+    "id": 11,
+    "title": "Outside Providence",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Comedy"
+  },
   {
     "id": 12,
     "title": "The Hound of the Baskervilles",
-   "image" : "../../../images/crazystupidlove.jpg", "genre": "Crime|Drama|Horror|Mystery"
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Crime|Drama|Horror|Mystery"
   },
-  { "id": 13, "title": "Divergent","image" : "../../../images/crazystupidlove.jpg", "genre": "Adventure|Romance|Sci-Fi|IMAX" },
-  { "id": 14, "title": "Vampire Academy","image" : "../../../images/crazystupidlove.jpg", "genre": "Action|Comedy|Fantasy" },
+  {
+    "id": 13,
+    "title": "Divergent",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Adventure|Romance|Sci-Fi|IMAX"
+  },
+  {
+    "id": 14,
+    "title": "Vampire Academy",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Action|Comedy|Fantasy"
+  },
   {
     "id": 15,
     "title": "Men Who Made the Movies: Samuel Fuller, The",
-   "image" : "../../../images/crazystupidlove.jpg", "genre": "Documentary"
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Documentary"
   },
-  { "id": 16, "title": "Bounty Hunter, The","image" : "../../../images/crazystupidlove.jpg", "genre": "Action|Comedy|Romance" },
-  { "id": 17, "title": "For Your Consideration","image" : "../../../images/crazystupidlove.jpg", "genre": "Comedy" },
-  { "id": 18, "title": "Captain Kidd","image" : "../../../images/crazystupidlove.jpg", "genre": "Action|Adventure|Drama" },
-  { "id": 19, "title": "The Overnight","image" : "../../../images/crazystupidlove.jpg", "genre": "Comedy" },
-  { "id": 20, "title": "Senseless","image" : "../../../images/crazystupidlove.jpg", "genre": "Comedy" },
+  {
+    "id": 16,
+    "title": "Bounty Hunter, The",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Action|Comedy|Romance"
+  },
+  {
+    "id": 17,
+    "title": "For Your Consideration",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Comedy"
+  },
+  {
+    "id": 18,
+    "title": "Captain Kidd",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Action|Adventure|Drama"
+  },
+  {
+    "id": 19,
+    "title": "The Overnight",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Comedy"
+  },
+  {
+    "id": 20,
+    "title": "Senseless",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Comedy"
+  },
   {
     "id": 21,
     "title": "Better Living Through Chemistry",
-   "image" : "../../../images/crazystupidlove.jpg", "genre": "Comedy|Drama"
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Comedy|Drama"
   },
   {
     "id": 22,
     "title": "Grand Illusion (La grande illusion)",
-   "image" : "../../../images/crazystupidlove.jpg", "genre": "Drama|War"
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Drama|War"
   },
-  { "id": 23, "title": "Limelight","image" : "../../../images/crazystupidlove.jpg", "genre": "Comedy|Drama|Romance" },
-  { "id": 24, "title": "Day After, The","image" : "../../../images/crazystupidlove.jpg", "genre": "Drama|Sci-Fi" },
+  {
+    "id": 23,
+    "title": "Limelight",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Comedy|Drama|Romance"
+  },
+  {
+    "id": 24,
+    "title": "Day After, The",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Drama|Sci-Fi"
+  },
   {
     "id": 25,
     "title": "Industrial Symphony No. 1: The Dream of the Brokenhearted",
-   "image" : "../../../images/crazystupidlove.jpg", "genre": "Drama"
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Drama"
   },
-  { "id": 26, "title": "Boys","image" : "../../../images/crazystupidlove.jpg", "genre": "Drama" },
-  { "id": 27, "title": "Paziraie Sadeh","image" : "../../../images/crazystupidlove.jpg", "genre": "Drama" },
-  { "id": 28, "title": "Clapham Junction","image" : "../../../images/crazystupidlove.jpg", "genre": "Drama" },
-  { "id": 29, "title": "Hearts in Atlantis","image" : "../../../images/crazystupidlove.jpg", "genre": "Drama" },
-  { "id": 30, "title": "Beneath the 12-Mile Reef","image" : "../../../images/crazystupidlove.jpg", "genre": "Adventure" },
-  { "id": 31, "title": "Eva","image" : "../../../images/crazystupidlove.jpg", "genre": "Drama|Fantasy|Sci-Fi" },
-  { "id": 32, "title": "Burning, The","image" : "../../../images/crazystupidlove.jpg", "genre": "Horror" },
-  { "id": 33, "title": "Too Many Girls","image" : "../../../images/crazystupidlove.jpg", "genre": "Comedy|Musical" },
+  {
+    "id": 26,
+    "title": "Boys",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Drama"
+  },
+  {
+    "id": 27,
+    "title": "Paziraie Sadeh",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Drama"
+  },
+  {
+    "id": 28,
+    "title": "Clapham Junction",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Drama"
+  },
+  {
+    "id": 29,
+    "title": "Hearts in Atlantis",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Drama"
+  },
+  {
+    "id": 30,
+    "title": "Beneath the 12-Mile Reef",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Adventure"
+  },
+  {
+    "id": 31,
+    "title": "Eva",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Drama|Fantasy|Sci-Fi"
+  },
+  {
+    "id": 32,
+    "title": "Burning, The",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Horror"
+  },
+  {
+    "id": 33,
+    "title": "Too Many Girls",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Comedy|Musical"
+  },
   {
     "id": 34,
     "title": "Of Snails and Men (Despre oameni si melci)",
-   "image" : "../../../images/crazystupidlove.jpg", "genre": "Comedy"
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Comedy"
   },
-  { "id": 35, "title": "So Dear to My Heart","image" : "../../../images/crazystupidlove.jpg", "genre": "Children|Drama" },
-  { "id": 36, "title": "Child's Play 2","image" : "../../../images/crazystupidlove.jpg", "genre": "Horror|Thriller" },
-  { "id": 37, "title": "Cloudland","image" : "../../../images/crazystupidlove.jpg", "genre": "Animation" },
-  { "id": 38, "title": "Kung Fu Hustle (Gong fu)","image" : "../../../images/crazystupidlove.jpg", "genre": "Action|Comedy" },
-  { "id": 39, "title": "So Much Water","image" : "../../../images/crazystupidlove.jpg", "genre": "Comedy|Drama" },
-  { "id": 40, "title": "Love and Other Catastrophes","image" : "../../../images/crazystupidlove.jpg", "genre": "Romance" },
-  { "id": 41, "title": "Next of Kin","image" : "../../../images/crazystupidlove.jpg", "genre": "Action|Crime|Thriller" },
-  { "id": 42, "title": "Zone, The (La Zona)","image" : "../../../images/crazystupidlove.jpg", "genre": "Drama|Thriller" },
-  { "id": 43, "title": "Tank on the Moon","image" : "../../../images/crazystupidlove.jpg", "genre": "Documentary" },
-  { "id": 44, "title": "300 Spartans, The","image" : "../../../images/crazystupidlove.jpg", "genre": "Adventure|Drama|War" },
-  { "id": 45, "title": "Scream","image" : "../../../images/crazystupidlove.jpg", "genre": "Comedy|Horror|Mystery|Thriller" },
-  { "id": 46, "title": "Ants in the Pants","image" : "../../../images/crazystupidlove.jpg", "genre": "Comedy|Romance" },
-  { "id": 47, "title": "Heart of Glass (Herz aus Glas)","image" : "../../../images/crazystupidlove.jpg", "genre": "Drama" },
-  { "id": 48, "title": "Fastest Gun Alive, The","image" : "../../../images/crazystupidlove.jpg", "genre": "Western" },
-  { "id": 49, "title": "Private Lessons","image" : "../../../images/crazystupidlove.jpg", "genre": "Comedy" },
-  { "id": 50, "title": "Haunter","image" : "../../../images/crazystupidlove.jpg", "genre": "Horror|Mystery|Thriller" },
-  { "id": 51, "title": "Mondo Cane","image" : "../../../images/crazystupidlove.jpg", "genre": "Documentary" },
-  { "id": 52, "title": "Angry Red Planet, The","image" : "../../../images/crazystupidlove.jpg", "genre": "Sci-Fi" },
-  { "id": 53, "title": "Just Imagine","image" : "../../../images/crazystupidlove.jpg", "genre": "Musical|Sci-Fi" },
-  { "id": 54, "title": "Hellraiser: Hellseeker","image" : "../../../images/crazystupidlove.jpg", "genre": "Horror" },
-  { "id": 55, "title": "For Richer or Poorer","image" : "../../../images/crazystupidlove.jpg", "genre": "Comedy" },
-  { "id": 56, "title": "All in a Night's Work","image" : "../../../images/crazystupidlove.jpg", "genre": "Comedy" },
+  {
+    "id": 35,
+    "title": "So Dear to My Heart",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Children|Drama"
+  },
+  {
+    "id": 36,
+    "title": "Child's Play 2",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Horror|Thriller"
+  },
+  {
+    "id": 37,
+    "title": "Cloudland",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Animation"
+  },
+  {
+    "id": 38,
+    "title": "Kung Fu Hustle (Gong fu)",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Action|Comedy"
+  },
+  {
+    "id": 39,
+    "title": "So Much Water",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Comedy|Drama"
+  },
+  {
+    "id": 40,
+    "title": "Love and Other Catastrophes",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Romance"
+  },
+  {
+    "id": 41,
+    "title": "Next of Kin",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Action|Crime|Thriller"
+  },
+  {
+    "id": 42,
+    "title": "Zone, The (La Zona)",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Drama|Thriller"
+  },
+  {
+    "id": 43,
+    "title": "Tank on the Moon",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Documentary"
+  },
+  {
+    "id": 44,
+    "title": "300 Spartans, The",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Adventure|Drama|War"
+  },
+  {
+    "id": 45,
+    "title": "Scream",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Comedy|Horror|Mystery|Thriller"
+  },
+  {
+    "id": 46,
+    "title": "Ants in the Pants",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Comedy|Romance"
+  },
+  {
+    "id": 47,
+    "title": "Heart of Glass (Herz aus Glas)",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Drama"
+  },
+  {
+    "id": 48,
+    "title": "Fastest Gun Alive, The",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Western"
+  },
+  {
+    "id": 49,
+    "title": "Private Lessons",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Comedy"
+  },
+  {
+    "id": 50,
+    "title": "Haunter",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Horror|Mystery|Thriller"
+  },
+  {
+    "id": 51,
+    "title": "Mondo Cane",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Documentary"
+  },
+  {
+    "id": 52,
+    "title": "Angry Red Planet, The",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Sci-Fi"
+  },
+  {
+    "id": 53,
+    "title": "Just Imagine",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Musical|Sci-Fi"
+  },
+  {
+    "id": 54,
+    "title": "Hellraiser: Hellseeker",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Horror"
+  },
+  {
+    "id": 55,
+    "title": "For Richer or Poorer",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Comedy"
+  },
+  {
+    "id": 56,
+    "title": "All in a Night's Work",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Comedy"
+  },
   {
     "id": 57,
     "title": "Star Wars: Episode V - The Empire Strikes Back",
-   "image" : "../../../images/crazystupidlove.jpg", "genre": "Action|Adventure|Sci-Fi"
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Action|Adventure|Sci-Fi"
   },
-  { "id": 58, "title": "Super Duper Alice Cooper","image" : "../../../images/crazystupidlove.jpg", "genre": "Documentary" },
-  { "id": 59, "title": "Five Pennies, The","image" : "../../../images/crazystupidlove.jpg", "genre": "Drama" },
-  { "id": 60, "title": "Aurora Borealis","image" : "../../../images/crazystupidlove.jpg", "genre": "Drama|Romance" },
-  { "id": 61, "title": "People Like Us","image" : "../../../images/crazystupidlove.jpg", "genre": "Drama" },
-  { "id": 62, "title": "My Man Godfrey","image" : "../../../images/crazystupidlove.jpg", "genre": "Comedy|Romance" },
-  { "id": 63, "title": "Dirty Deeds","image" : "../../../images/crazystupidlove.jpg", "genre": "Comedy" },
-  { "id": 64, "title": "Mr. Brooks","image" : "../../../images/crazystupidlove.jpg", "genre": "Crime|Drama|Thriller" },
-  { "id": 65, "title": "Crows Zero (Kurôzu zero)","image" : "../../../images/crazystupidlove.jpg", "genre": "Action" },
-  { "id": 66, "title": "Grumpier Old Men","image" : "../../../images/crazystupidlove.jpg", "genre": "Comedy|Romance" },
-  { "id": 67, "title": "Bedazzled","image" : "../../../images/crazystupidlove.jpg", "genre": "Comedy" },
-  { "id": 68, "title": "Seize the Day","image" : "../../../images/crazystupidlove.jpg", "genre": "Drama" },
-  { "id": 69, "title": "Where's Poppa?","image" : "../../../images/crazystupidlove.jpg", "genre": "Comedy" },
-  { "id": 70, "title": "Los Flamencos","image" : "../../../images/crazystupidlove.jpg", "genre": "Comedy" },
-  { "id": 71, "title": "Holes in My Shoes","image" : "../../../images/crazystupidlove.jpg", "genre": "Documentary" },
-  { "id": 72, "title": "Perfume","image" : "../../../images/crazystupidlove.jpg", "genre": "Comedy|Drama" },
-  { "id": 73, "title": "Carnival of Souls","image" : "../../../images/crazystupidlove.jpg", "genre": "Horror|Thriller" },
+  {
+    "id": 58,
+    "title": "Super Duper Alice Cooper",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Documentary"
+  },
+  {
+    "id": 59,
+    "title": "Five Pennies, The",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Drama"
+  },
+  {
+    "id": 60,
+    "title": "Aurora Borealis",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Drama|Romance"
+  },
+  {
+    "id": 61,
+    "title": "People Like Us",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Drama"
+  },
+  {
+    "id": 62,
+    "title": "My Man Godfrey",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Comedy|Romance"
+  },
+  {
+    "id": 63,
+    "title": "Dirty Deeds",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Comedy"
+  },
+  {
+    "id": 64,
+    "title": "Mr. Brooks",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Crime|Drama|Thriller"
+  },
+  {
+    "id": 65,
+    "title": "Crows Zero (Kurôzu zero)",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Action"
+  },
+  {
+    "id": 66,
+    "title": "Grumpier Old Men",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Comedy|Romance"
+  },
+  {
+    "id": 67,
+    "title": "Bedazzled",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Comedy"
+  },
+  {
+    "id": 68,
+    "title": "Seize the Day",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Drama"
+  },
+  {
+    "id": 69,
+    "title": "Where's Poppa?",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Comedy"
+  },
+  {
+    "id": 70,
+    "title": "Los Flamencos",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Comedy"
+  },
+  {
+    "id": 71,
+    "title": "Holes in My Shoes",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Documentary"
+  },
+  {
+    "id": 72,
+    "title": "Perfume",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Comedy|Drama"
+  },
+  {
+    "id": 73,
+    "title": "Carnival of Souls",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Horror|Thriller"
+  },
   {
     "id": 74,
     "title": "Samouraï, Le (Godson, The)",
-   "image" : "../../../images/crazystupidlove.jpg", "genre": "Crime|Drama|Thriller"
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Crime|Drama|Thriller"
   },
-  { "id": 75, "title": "Yonkers Joe","image" : "../../../images/crazystupidlove.jpg", "genre": "Drama" },
-  { "id": 76, "title": "Dragon: The Bruce Lee Story","image" : "../../../images/crazystupidlove.jpg", "genre": "Action|Drama" },
-  { "id": 77, "title": "Manny & Lo","image" : "../../../images/crazystupidlove.jpg", "genre": "Drama" },
-  { "id": 78, "title": "All Access","image" : "../../../images/crazystupidlove.jpg", "genre": "Documentary|Musical|IMAX" },
+  {
+    "id": 75,
+    "title": "Yonkers Joe",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Drama"
+  },
+  {
+    "id": 76,
+    "title": "Dragon: The Bruce Lee Story",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Action|Drama"
+  },
+  {
+    "id": 77,
+    "title": "Manny & Lo",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Drama"
+  },
+  {
+    "id": 78,
+    "title": "All Access",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Documentary|Musical|IMAX"
+  },
   {
     "id": 79,
     "title": "The Death and Life of Bobby Z",
-   "image" : "../../../images/crazystupidlove.jpg", "genre": "Action|Crime|Drama|Thriller"
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Action|Crime|Drama|Thriller"
   },
   {
     "id": 80,
     "title": "Like Stars on Earth (Taare Zameen Par)",
-   "image" : "../../../images/crazystupidlove.jpg", "genre": "Drama"
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Drama"
   },
-  { "id": 81, "title": "Taxi 2","image" : "../../../images/crazystupidlove.jpg", "genre": "Action|Comedy" },
-  { "id": 82, "title": "Knick Knack","image" : "../../../images/crazystupidlove.jpg", "genre": "Animation|Children" },
-  { "id": 83, "title": "Ivory Tower","image" : "../../../images/crazystupidlove.jpg", "genre": "Documentary" },
-  { "id": 84, "title": "Beware of Pity","image" : "../../../images/crazystupidlove.jpg", "genre": "Drama|Romance" },
+  {
+    "id": 81,
+    "title": "Taxi 2",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Action|Comedy"
+  },
+  {
+    "id": 82,
+    "title": "Knick Knack",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Animation|Children"
+  },
+  {
+    "id": 83,
+    "title": "Ivory Tower",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Documentary"
+  },
+  {
+    "id": 84,
+    "title": "Beware of Pity",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Drama|Romance"
+  },
   {
     "id": 85,
     "title": "Flying Swords of Dragon Gate, The (Long men fei jia)",
-   "image" : "../../../images/crazystupidlove.jpg", "genre": "Action|Adventure|IMAX"
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Action|Adventure|IMAX"
   },
-  { "id": 86, "title": "Standing Up","image" : "../../../images/crazystupidlove.jpg", "genre": "Adventure|Children" },
-  { "id": 87, "title": "Kids Return (Kizzu ritân)","image" : "../../../images/crazystupidlove.jpg", "genre": "Drama" },
-  { "id": 88, "title": "Great McGinty, The","image" : "../../../images/crazystupidlove.jpg", "genre": "Comedy" },
-  { "id": 89, "title": "This Movie Is Broken","image" : "../../../images/crazystupidlove.jpg", "genre": "Drama|Romance" },
-  { "id": 90, "title": "Emotion","image" : "../../../images/crazystupidlove.jpg", "genre": "Comedy|Horror" },
-  { "id": 91, "title": "Nekromantik 2","image" : "../../../images/crazystupidlove.jpg", "genre": "Horror" },
+  {
+    "id": 86,
+    "title": "Standing Up",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Adventure|Children"
+  },
+  {
+    "id": 87,
+    "title": "Kids Return (Kizzu ritân)",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Drama"
+  },
+  {
+    "id": 88,
+    "title": "Great McGinty, The",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Comedy"
+  },
+  {
+    "id": 89,
+    "title": "This Movie Is Broken",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Drama|Romance"
+  },
+  {
+    "id": 90,
+    "title": "Emotion",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Comedy|Horror"
+  },
+  {
+    "id": 91,
+    "title": "Nekromantik 2",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Horror"
+  },
   {
     "id": 92,
     "title": "Terrible Kids (Enfants terribles, Les) (Strange Ones, The)",
-   "image" : "../../../images/crazystupidlove.jpg", "genre": "Drama"
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Drama"
   },
-  { "id": 93, "title": "Everything Will Be Fine","image" : "../../../images/crazystupidlove.jpg", "genre": "Drama|Thriller" },
-  { "id": 94, "title": "Lincoln","image" : "../../../images/crazystupidlove.jpg", "genre": "Drama|War" },
-  { "id": 95, "title": "Crisis","image" : "../../../images/crazystupidlove.jpg", "genre": "Drama|Thriller" },
+  {
+    "id": 93,
+    "title": "Everything Will Be Fine",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Drama|Thriller"
+  },
+  {
+    "id": 94,
+    "title": "Lincoln",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Drama|War"
+  },
+  {
+    "id": 95,
+    "title": "Crisis",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Drama|Thriller"
+  },
   {
     "id": 96,
     "title": "Counter Investigation (Contre-enquête)",
-   "image" : "../../../images/crazystupidlove.jpg", "genre": "Crime|Drama"
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Crime|Drama"
   },
-  { "id": 97, "title": "Newest Pledge, The","image" : "../../../images/crazystupidlove.jpg", "genre": "Comedy" },
-  { "id": 98, "title": "Victim","image" : "../../../images/crazystupidlove.jpg", "genre": "Crime|Drama" },
+  {
+    "id": 97,
+    "title": "Newest Pledge, The",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Comedy"
+  },
+  {
+    "id": 98,
+    "title": "Victim",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Crime|Drama"
+  },
   {
     "id": 99,
     "title": "Ghost Rider: Spirit of Vengeance",
-   "image" : "../../../images/crazystupidlove.jpg", "genre": "Action|Fantasy|Thriller"
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Action|Fantasy|Thriller"
   },
-  { "id": 100, "title": "Torpedo Run","image" : "../../../images/crazystupidlove.jpg", "genre": "Drama|War" }
+  {
+    "id": 100,
+    "title": "Torpedo Run",
+    "image": "../../../images/crazystupidlove.jpg",
+    "genre": "Drama|War"
+  }
 ]
