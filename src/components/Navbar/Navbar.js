@@ -1,9 +1,9 @@
 import React from "react";
 import "./navbar.css";
 import logo from "./netflixlogo.jpg";
-import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import NotificationsIcon from '@mui/icons-material/Notifications';
-import AccountBoxIcon from '@mui/icons-material/AccountBox';
+import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import NotificationsIcon from "@mui/icons-material/Notifications";
+import AccountBoxIcon from "@mui/icons-material/AccountBox";
 
 export default function Navbar() {
   return (
@@ -11,7 +11,7 @@ export default function Navbar() {
       <ul className="navbar--group navbar--group-left">
         <img className="netflixlogo" src={logo} alt="netflix" />
         <li className="nav--item">Home</li>
-        <li className="nav--item">Tv Shows</li>
+        <li className="nav--item">TV Shows</li>
         <li className="nav--item">Movies</li>
         <li className="nav--item">New &amp; Popular</li>
         <li className="nav--item">My List</li>

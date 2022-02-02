@@ -22,6 +22,7 @@
 }
 .navbar--group-right {
   margin-left: auto;
+  margin-right: 3rem;
 }
 .nav--item {
   position: relative;
@@ -37,6 +38,6 @@
 li {
   top: 1rem;
 }
-.pad-top{
-  padding-top: .5rem;
+.pad-top {
+  padding-top: 0.5rem;
 }
