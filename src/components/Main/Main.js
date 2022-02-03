@@ -11,17 +11,19 @@ export default function Main() {
       uniqueGenreArray.push(movie.genre.split("|")[0]);
     }
   });
-  let emptyObj = {};
+  let sortedGenreMovies = {};
   uniqueGenreArray.forEach((uniqueGenre) => {
+    let alikeGenreMovies = [];
     movieData.forEach((movie) => {
       if (movie.genre === uniqueGenre) {
-        emptyObj[uniqueGenre] = movie.title;
+        alikeGenreMovies.push(movie.title);
+        sortedGenreMovies[uniqueGenre] = alikeGenreMovies;
       }
     });
   });
+  console.log(sortedGenreMovies);
   return (
     <div className="center">
-      {uniqueGenreArray}
       <Movie />
     </div>
   );
