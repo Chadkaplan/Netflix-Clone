@@ -9,15 +9,16 @@ export default function Main() {
       !uniqueGenreArray.some((genre) => genre === movie.genre.split("|")[0])
     ) {
       uniqueGenreArray.push(movie.genre.split("|")[0]);
-      // bracket notation
     }
   });
   let emptyObj = {};
   uniqueGenreArray.forEach((uniqueGenre) => {
-    // fix movieData[0]. to be movies that belong to the category
-    emptyObj[uniqueGenre] = movieData[0].title;
+    movieData.forEach((movie) => {
+      if (movie.genre === uniqueGenre) {
+        emptyObj[uniqueGenre] = movie.title;
+      }
+    });
   });
-  console.log(emptyObj);
   return (
     <div className="center">
       {uniqueGenreArray}
