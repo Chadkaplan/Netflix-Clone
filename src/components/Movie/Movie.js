@@ -2,7 +2,8 @@ import React from "react";
 import movieData from "../../data/movies.json";
 import "./movie.css";
 
-export default function Movie() {
+export default function Movie(props) {
+  console.log(props)
   return (
     <div className="row">
       {movieData.map((movie) => (
@@ -13,3 +14,4 @@ export default function Movie() {
     </div>
   );
 }
+

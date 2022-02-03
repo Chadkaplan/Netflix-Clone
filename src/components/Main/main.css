@@ -3,9 +3,12 @@ and then the modifier is anything that modifies the element (e.g disabled)
 
 <label className="Main__label-title Main__label-title--row">Drama</label> */
 
-.center {
-  margin: 0 auto;
-  width: fit-content;
+.main {
+  margin: auto;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 /* Generic flex rows and columns */
 .row {

@@ -21,10 +21,17 @@ export default function Main() {
       }
     });
   });
-  console.log(sortedGenreMovies);
   return (
-    <div className="center">
-      <Movie />
+    <div className="main">
+      {Object.keys(sortedGenreMovies).map((key) => (
+        <div key={key}>
+          <h3>{key}</h3>
+          <Movie title={sortedGenreMovies[key].map((movie) =>(
+  <p key={movie}>{movie}</p>
+))}/>
+        </div>
+      ))}
+      {/* <Movie /> */}
     </div>
   );
 }
