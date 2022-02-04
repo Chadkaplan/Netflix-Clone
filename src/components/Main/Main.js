@@ -11,32 +11,36 @@ export default function Main() {
       uniqueGenreArray.push(movie.genre.split("|")[0]);
     }
   });
-  // {Genre1: [{movie1}, {movie2},
-  // Genre2: [{movie1}{movie2}{movie3}]
-  // ]}
   let sortedGenreMovies = {};
-  uniqueGenreArray.forEach((uniqueGenre) => {
-    let alikeGenreMovies = [];
-    movieData.forEach((movie) => {
-      if (movie.genre === uniqueGenre) {
-        alikeGenreMovies.push(movie);
-        sortedGenreMovies[uniqueGenre] = alikeGenreMovies;
-      }
-    });
+  movieData.forEach((movie) => {
+    // First we get the movie genre
+    const movieGenre = movie.genre.split("|")[0];
+    // Now lets get the current value for this genre.
+    // It might be undefined if this is a new genre, or it might be an array
+    // Since we need an array, we can use || to assign an empty array if its undefined
+    let currentMoviesForGenre = sortedGenreMovies[movieGenre] || [];
+    // Now we can push our movie into the array
+    currentMoviesForGenre.push(movie);
+    // And finally set this array as the value for the genre
+    sortedGenreMovies[movieGenre] = currentMoviesForGenre;
   });
   return (
     <div className="main">
       {Object.keys(sortedGenreMovies).map((genre) => (
-        <div key={genre}>
+        <div className="main__label--reset" key={genre}>
           {/* Each genre */}
           <h1>{genre}</h1>
-          {console.log(Object.values(sortedGenreMovies[genre])[0].image)}
-          <div>{Object.values(sortedGenreMovies[genre].map((movie) => (
-            <img className="movie--icon" src={movie.image}></img>
-          )))}</div>
+          {Object.values(
+            sortedGenreMovies[genre].map((movie) => (
+              <img
+                key={movie.id}
+                className="movie--icon"
+                src={movie.image}
+              ></img>
+            ))
+          )}
         </div>
       ))}
-      {/* <Movie /> */}
     </div>
   );
 }
