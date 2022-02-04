@@ -13,7 +13,6 @@ export default function Main() {
         uniqueGenreArray.push(movie.genre);
       }
     });
-    console.log(uniqueGenreArray);
     return (
     <div className="center">
         <h1>

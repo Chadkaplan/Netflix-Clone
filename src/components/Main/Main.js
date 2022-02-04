@@ -11,24 +11,29 @@ export default function Main() {
       uniqueGenreArray.push(movie.genre.split("|")[0]);
     }
   });
+  // {Genre1: [{movie1}, {movie2},
+  // Genre2: [{movie1}{movie2}{movie3}]
+  // ]}
   let sortedGenreMovies = {};
   uniqueGenreArray.forEach((uniqueGenre) => {
     let alikeGenreMovies = [];
     movieData.forEach((movie) => {
       if (movie.genre === uniqueGenre) {
-        alikeGenreMovies.push(movie.title);
+        alikeGenreMovies.push(movie);
         sortedGenreMovies[uniqueGenre] = alikeGenreMovies;
       }
     });
   });
   return (
     <div className="main">
-      {Object.keys(sortedGenreMovies).map((key) => (
-        <div key={key}>
-          <h3>{key}</h3>
-          <Movie title={sortedGenreMovies[key].map((movie) =>(
-  <p key={movie}>{movie}</p>
-))}/>
+      {Object.keys(sortedGenreMovies).map((genre) => (
+        <div key={genre}>
+          {/* Each genre */}
+          <h1>{genre}</h1>
+          {console.log(Object.values(sortedGenreMovies[genre])[0].image)}
+          <div>{Object.values(sortedGenreMovies[genre].map((movie) => (
+            <img className="movie--icon" src={movie.image}></img>
+          )))}</div>
         </div>
       ))}
       {/* <Movie /> */}
