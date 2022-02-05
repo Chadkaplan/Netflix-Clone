@@ -36,6 +36,7 @@ export default function Main() {
                 key={movie.id}
                 className="movie--icon"
                 src={movie.image}
+                alt={movie.title}
               ></img>
             ))
           )}
