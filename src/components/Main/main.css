@@ -10,8 +10,7 @@ and then the modifier is anything that modifies the element (e.g disabled)
 .row {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
+  flex-wrap: nowrap;
 }
 .column {
   display: flex;

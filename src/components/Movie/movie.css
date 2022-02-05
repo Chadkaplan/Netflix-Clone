@@ -2,8 +2,7 @@
 .row {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
+  flex-wrap: nowrap;
 }
 .column {
   display: flex;
