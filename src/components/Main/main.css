@@ -15,5 +15,5 @@ and then the modifier is anything that modifies the element (e.g disabled)
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
