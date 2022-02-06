@@ -8,7 +8,8 @@ export default function Main() {
     if (
       !uniqueGenreArray.some((genre) => genre === movie.genre.split("|")[0])
     ) {
-      uniqueGenreArray.push(movie.genre.split("|")[0]);
+      // using spread operator
+      [...uniqueGenreArray, movie.genre.split("|")[0]]
     }
   });
   let sortedGenreMovies = {};
