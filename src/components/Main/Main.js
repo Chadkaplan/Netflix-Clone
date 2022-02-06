@@ -25,18 +25,17 @@ export default function Main() {
     sortedGenreMovies[movieGenre] = currentMoviesForGenre;
   });
   return (
-    <div className="main">
+    <div className="Main">
       {Object.keys(sortedGenreMovies).map((genre) => (
-          <div className="main__label" key={genre}>
+          <div key={genre}>
             {/* Each genre */}
-            <h1 className="row">{genre}</h1>
-            <div className="row">
+            <h1 className="Main__label-title--row">{genre}</h1>
+            <div className="Main__label-movie--row">
               {/* Each movie */}
               {Object.values(
                 sortedGenreMovies[genre].map((movie) => (
                   <Movie
                     key={movie.id}
-                    className="movie--icon"
                     img={movie.image}
                     title={movie.title}
                   />

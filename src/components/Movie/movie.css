@@ -1,16 +1,3 @@
-/* Generic flex rows and columns */
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-}
-/* ------------------------------- */
 .movie--icon {
   margin: 0px;
   max-height: 130px;

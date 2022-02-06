@@ -1,4 +1,4 @@
-.navbar {
+.Navbar {
   display: flex;
   position: sticky;
   top: 0;
@@ -10,22 +10,22 @@
   margin: 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.navbar--group {
+.Navbar__group {
   display: flex;
   height: 100%;
   list-style-type: none;
   justify-content: space-evenly;
   gap: 1rem;
 }
-.navbar--group-left {
+.Navbar__group--left {
   margin-right: auto;
   padding-top: 0px;
 }
-.navbar--group-right {
+.Navbar__group--right {
   margin-left: auto;
   margin-right: 3rem;
 }
-.nav--item {
+.Navbar__item {
   position: relative;
   bottom: 0;
   left: 0px;
@@ -39,6 +39,6 @@
 li {
   top: 1rem;
 }
-.pad-top {
+.Navbar__item--pad {
   padding-top: 0.5rem;
 }
