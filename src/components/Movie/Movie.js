@@ -1,15 +1,11 @@
 import React from "react";
-import movieData from "../../data/movies.json";
 import "./movie.css";
 
-export default function Movie() {
+export default function Movie(props) {
+  console.log(props)
   return (
-    <div className="row">
-      {movieData.map((movie) => (
-        <div key={movie.id}>
-          <img className="movie--icon" src={movie.image} alt={movie.title} />
-        </div>
-      ))}
+    <div>
+      <img className="movie--icon" src={props.img} alt={props.title} />
     </div>
   );
 }
