@@ -8,7 +8,7 @@ import AccountBoxIcon from "@mui/icons-material/AccountBox";
 export default function Navbar() {
   return (
     <header className="Navbar">
-      <ul className="Navbar__group Navbar__group--left">
+      <ul className="Navbar__group">
         <img className="Navbar__netflixlogo" src={logo} alt="netflix" />
         <li className="Navbar__item">Home</li>
         <li className="Navbar__item">TV Shows</li>

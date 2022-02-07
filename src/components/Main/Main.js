@@ -1,4 +1,3 @@
-import React from "react";
 import movieData from "../../data/movies.json";
 import "./main.css";
 import Movie from "../Movie/Movie";

@@ -2,13 +2,12 @@
   display: flex;
   position: sticky;
   top: 0;
-  flex-direction: row;
   background-color: black;
-  width: 100%;
-  padding: 0;
+  box-sizing: border-box;
   padding-left: 1.1rem;
   margin: 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  align-items: center;
 }
 .Navbar__group {
   display: flex;
@@ -17,27 +16,18 @@
   justify-content: space-evenly;
   gap: 1rem;
 }
-.Navbar__group--left {
-  margin-right: auto;
-  padding-top: 0px;
-}
 .Navbar__group--right {
   margin-left: auto;
   margin-right: 3rem;
 }
 .Navbar__item {
   position: relative;
-  bottom: 0;
-  left: 0px;
+  top: 1rem;
 }
 .Navbar__netflixlogo {
-  margin-top: 0;
   margin-right: 20px;
   height: 3rem;
   width: 5rem;
-}
-li {
-  top: 1rem;
 }
 .Navbar__item--pad {
   padding-top: 0.5rem;
