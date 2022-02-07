@@ -1,8 +1,3 @@
-/* An easy way to implement BEM is using the function name as the Block then what you were using for the class as the element,
-and then the modifier is anything that modifies the element (e.g disabled)
-
-<label className="Main__label-title Main__label-title--row">Drama</label> */
-
 .Main {
   padding: 60px;
 }
