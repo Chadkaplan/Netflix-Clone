@@ -9,11 +9,11 @@ and then the modifier is anything that modifies the element (e.g disabled)
 .Main__label-title--row {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  /* Not necessary to use flex-wrap here */
 }
 .Main__label-movie--row {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  /* Not necessary to use flex-wrap here */
   overflow-x: auto;
 }

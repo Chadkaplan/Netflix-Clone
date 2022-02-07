@@ -2,12 +2,17 @@
   display: flex;
   position: sticky;
   top: 0;
-  flex-direction: row;
+  /* flex-direction: row is the default, no need to specify */
+  /* Use justify content to better layout the navbar_groups */
+  justify-content: space-between;
   background-color: black;
-  width: 100%;
-  padding: 0;
+  /* No need to specify width: 100%; */
+  /* Use  box-sizing: border-box to more easily work with our inner padding  */
+  box-sizing: border-box;
   padding-left: 1.1rem;
-  margin: 0;
+  padding-right: 3rem;
+  /* align-items: center; */
+  /* don't need to specify margin: 0; it will already have a 0 margin */
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .Navbar__group {
@@ -15,30 +20,37 @@
   height: 100%;
   list-style-type: none;
   justify-content: space-evenly;
+  /*  Have the parent align all its children */
+  align-items: center;
   gap: 1rem;
 }
+/* This class can likely be removed */
 .Navbar__group--left {
-  margin-right: auto;
-  padding-top: 0px;
+  /* No need to specify margin-right: auto; */
+  /* No need to specify  padding-top: 0px; */
 }
+/* This class can likely be removed */
 .Navbar__group--right {
-  margin-left: auto;
-  margin-right: 3rem;
+  /* margin-left: auto; */
+  /* margin-right: 3rem; */
 }
+/* This class can likely be removed */
 .Navbar__item {
-  position: relative;
-  bottom: 0;
-  left: 0px;
+
 }
 .Navbar__netflixlogo {
-  margin-top: 0;
+  /* No need to specify margin-top: 0; */
   margin-right: 20px;
   height: 3rem;
   width: 5rem;
 }
+/* Don't target an element, this will be applied to ALL li elements in your app */
 li {
-  top: 1rem;
+  /* No need to specify top: 1rem; */
 }
+/* This class can likely be removed */
+
 .Navbar__item--pad {
-  padding-top: 0.5rem;
+  /* This is causing kids to be too low */
+  /* padding-top: 0.5rem; */
 }

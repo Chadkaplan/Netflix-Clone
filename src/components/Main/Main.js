@@ -1,4 +1,4 @@
-import React from "react";
+// No need to import React
 import movieData from "../../data/movies.json";
 import "./main.css";
 import Movie from "../Movie/Movie";
