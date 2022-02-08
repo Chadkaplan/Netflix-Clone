@@ -16,11 +16,11 @@ export default function Navbar() {
         <li>New &amp; Popular</li>
         <li>My List</li>
       </ul>
-      <div className="Navbar__group Navbar__group--right">
+      <div className="Navbar__group">
         <h6>
           <SearchOutlinedIcon />
         </h6>
-        <h5 className="Navbar__item">Kids</h5>
+        <h5>Kids</h5>
         <h6>
           <NotificationsIcon />
         </h6>
