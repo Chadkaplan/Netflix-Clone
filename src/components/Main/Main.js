@@ -2,7 +2,7 @@ import movieData from "../../data/movies.json";
 import "./main.css";
 import Movie from "../Movie/Movie";
 export default function Main(props) {
-  console.log(props)
+  console.log(props.data);
   let uniqueGenreArray = [];
   movieData.forEach((movie) => {
     if (
@@ -27,20 +27,16 @@ export default function Main(props) {
   return (
     <div className="Main">
       {Object.keys(sortedGenreMovies).map((genre) => (
-          <div key={genre}>
-            {/* Each genre */}
-            <h1 className="Main__label-title--row">{genre}</h1>
-            <div className="Main__label-movie--row">
-              {/* Each movie */}
-              {Object.values(
-                sortedGenreMovies[genre].map((movie) => (
-                  <Movie
-                    key={movie.id}
-                    img={movie.image}
-                    title={movie.title}
-                  />
-                ))
-              )}
+        <div key={genre}>
+          {/* Each genre */}
+          <h1 className="Main__label-title--row">{genre}</h1>
+          <div className="Main__label-movie--row">
+            {/* Each movie */}
+            {Object.values(
+              sortedGenreMovies[genre].map((movie) => (
+                <Movie key={movie.id} img={movie.image} title={movie.title} />
+              ))
+            )}
           </div>
         </div>
       ))}
