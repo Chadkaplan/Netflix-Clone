@@ -1,24 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Main from "./components/Main/Main";
-import axios from 'axios';
+import axios from "axios";
 
-const API_KEY = process.env.REACT_APP_API_KEY
-let API_URL = "Crazy+stupid+love"
+const API_KEY = process.env.REACT_APP_API_KEY;
+let API_URL = "the+a";
 
 function App() {
-  axios.get(`http://www.omdbapi.com/?apikey=${API_KEY}&t=${API_URL}`)
-  .then(res => {
-    const movie = res.data;
-    console.log(movie);
-  }).catch(function (error) {
-    if (error.response) {
-      console.log(error.response.data);
-  }})
+  const [moviesList, setmoviesList] = useState({});
+
+  useEffect(() => {
+    fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${API_URL}`)
+      .then((res) => res.json())
+      .then(
+        (result) => {
+          setmoviesList(result);
+        },
+        (error) => {
+          console.error(error);
+        }
+      );
+  }, []);
   return (
     <div className="App">
       <Navbar />
-      <Main />
+      <Main data={moviesList} />
     </div>
   );
 }
