@@ -2,7 +2,7 @@ import movieData from "../../data/movies.json";
 import "./main.css";
 import Movie from "../Movie/Movie";
 export default function Main(props) {
-  console.log(props.data);
+  // console.log(props.data);
   let uniqueGenreArray = [];
   movieData.forEach((movie) => {
     if (
