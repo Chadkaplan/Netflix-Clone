@@ -9,13 +9,7 @@ let searchParam = "s";
 
 function App() {
   const [moviesList, setMoviesList] = useState([]);
-  const [moviesToQuery, setMoviesToQuery] = useState([]);
-  let imdbID;
-//   Promise.all(urls.map(url =>
-//     fetch(url).then(resp => resp.text())
-// )).then(texts => {
-//     …
-// })
+  const [moviesToQuery, setMoviesToQuery] = useState([]);``
   useEffect(() => {
     fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${API_URL}`)
       .then((res) => res.json())
@@ -24,24 +18,20 @@ function App() {
         console.log("Requestfailed", error);
       });
   }, []);
+
   useEffect(() => {
-    // Promise.all(Object.values(moviesToQuery.map()))
-    fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&t=${[moviesToQuery]}`)
-      .then((res) => res.json())
-      .then((result) => setMoviesList(result)),
-      // Note: it's important to handle errors here
-      // instead of a catch() block so that we don't swallow
-      // exceptions from actual bugs in components.
-      (error) => {
-        setIsLoaded(true);
-        setError(error);
-      };
+    Promise.all(
+      moviesToQuery.forEach((movie) => {
+        fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&t=${movie.imdbID}`);
+      })
+    )
+      .then((values) => {
+        console.log(values);
+      })
+      .catch(function (error) {
+        console.log("Requestfailed", error);
+      });
   }, []);
-  // console.log("Movies to Query: ", moviesToQuery);
-  // console.log("Movies List: ", moviesList);
-  console.log("IMDB values: ", moviesToQuery.forEach(movie => {
-    console.log(Object.values(movie)[2])
-  }));
   return (
     <div className="App">
       <Navbar />
