@@ -22,14 +22,10 @@ function App() {
   useEffect(() => {
     Promise.all(
       moviesToQuery.map((movie) => {
-<<<<<<< HEAD
         return fetch(
           `http://www.omdbapi.com/?apikey=${API_KEY}&i=${movie.imdbID}`
         )
         .then((res) => res.json())
-=======
-        return fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&t=${movie.imdbID}`);
->>>>>>> da146fea4780e4b49dd57c3fbadf482b3061ffc9
       })
     )
       .then((values) => setMoviesList(values))

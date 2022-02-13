@@ -2,19 +2,19 @@ import movieData from "../../data/movies.json";
 import "./main.css";
 import Movie from "../Movie/Movie";
 export default function Main(props) {
-  // console.log("Props: ", props.data);
+  console.log("Props: ", props.data);
   let uniqueGenreArray = [];
-  movieData.forEach((movie) => {
+  props.data.forEach((movie) => {
     if (
-      !uniqueGenreArray.some((genre) => genre === movie.genre.split("|")[0])
+      !uniqueGenreArray.some((genre) => genre === movie.Genre.split(",")[0])
     ) {
-      uniqueGenreArray.push(movie.genre.split("|")[0]);
+      uniqueGenreArray.push(movie.Genre.split(",")[0]);
     }
   });
   let sortedGenreMovies = {};
-  movieData.forEach((movie) => {
+  props.data.forEach((movie) => {
     // First we get the movie genre
-    const movieGenre = movie.genre.split("|")[0];
+    const movieGenre = movie.Genre.split(",")[0];
     // Now lets get the current value for this genre.
     // It might be undefined if this is a new genre, or it might be an array
     // Since we need an array, we can use || to assign an empty array if its undefined
@@ -34,7 +34,7 @@ export default function Main(props) {
             {/* Each movie */}
             {Object.values(
               sortedGenreMovies[genre].map((movie) => (
-                <Movie key={movie.id} img={movie.image} title={movie.title} />
+                <Movie key={movie.imdbID} img={movie.Poster} title={movie.Title} />
               ))
             )}
           </div>
