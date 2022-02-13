@@ -26,14 +26,14 @@ function App() {
   useEffect(() => {
     Promise.all(
       moviesToQuery.map((movie) => {
-        fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&t=${movie.imdbID}`);
+        return fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&t=${movie.imdbID}`);
       })
     )
       .then((values) => console.log("Values: ", values))
       .catch(function (error) {
         console.log("Requestfailed", error);
       });
-  }, []);
+  }, [moviesToQuery]);
   // console.log("To Query: ",moviesToQuery)
   return (
     <div className="App">
