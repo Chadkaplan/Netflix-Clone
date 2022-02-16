@@ -1,9 +1,10 @@
 import "./movie.css";
 
-export default function Movie(props) {
+// Lets start destructuring props
+export default function Movie({ img, title }) {
   return (
     <div>
-      <img className="Movie__icon" src={props.img} alt={props.title} />
+      <img className="Movie__icon" src={img} alt={title} />
     </div>
   );
 }

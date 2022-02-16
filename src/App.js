@@ -1,40 +1,48 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Main from "./components/Main/Main";
-import axios from "axios";
+// Remove unused imports
 
 const API_KEY = process.env.REACT_APP_API_KEY;
 let API_URL = "the+a";
-let searchParam = "s";
+// remove unused variables
 
 function App() {
-  const [moviesList, setMoviesList] = useState([{Poster: "https://m.media-amazon.com/images/M/MV5BZThjMmQ5YjktMTUyMC00MjljLWJmMTAtOWIzNDIzY2VhNzQ0XkEyXkFqcGdeQXVyMTAyNjg4NjE0._V1_SX300.jpg",
-  Title: "The Perks of Being a Wallflower",
-  Type: "movie",
-  Year: "2012",
-  imdbID: "tt1659337"}]);
-  const [moviesToQuery, setMoviesToQuery] = useState([]);
+  const [moviesList, setMoviesList] = useState([]);
+  /**
+  * Lets make some changes here. We only need moviesToQuery so that we can make our next request
+  * moviesToQuery has no value on its own. Also, the useEffect that actually requests the individual movies runs
+  * on the next render after we have the moviesToQuery, this is essentially a wasted render since we wont have
+  * anything new to show. So lets combine them.
+  * This implementation is fine, but has a bunch of nested callbacks and is overall pretty ugly and hard to follow
+  * A better choice will be to leverage async / await, but to do that, we will need to move these functions outside of the component
+  * Once you have this implementation working and make sense, we'll refactor these to be separate async functions
+  **/
   useEffect(() => {
     fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${API_URL}`)
       .then((res) => res.json())
-      .then((result) => setMoviesToQuery(result.Search))
-      .catch(function (error) {
+      .then((result) => {
+        const moviesToQuery = result.Search;
+        Promise.all(
+          moviesToQuery.map((movie) => {
+            return fetch(
+              `http://www.omdbapi.com/?apikey=${API_KEY}&i=${movie.imdbID}`
+            )
+            .then((res) => res.json())
+          })
+        )
+          .then((values) => setMoviesList(values))
+          // lets remain consistent with how we declare functions
+          .catch((error) => {
+            console.log("Requestfailed", error);
+          });
+      })
+      // lets remain consistent with how we declare functions
+      .catch((error) => {
         console.log("Requestfailed", error);
       });
   }, []);
-    
-  useEffect(() => {
-    Promise.all(
-      moviesToQuery.map((movie) => {
-        return fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&t=${movie.imdbID}`);
-      })
-    )
-      .then((values) => console.log("Values: ", values))
-      .catch(function (error) {
-        console.log("Requestfailed", error);
-      });
-  }, [moviesToQuery]);
-  // console.log("To Query: ",moviesToQuery)
+
   return (
     <div className="App">
       <Navbar />

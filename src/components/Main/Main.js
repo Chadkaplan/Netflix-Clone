@@ -1,20 +1,34 @@
-import movieData from "../../data/movies.json";
 import "./main.css";
 import Movie from "../Movie/Movie";
-export default function Main(props) {
-  // console.log("Props: ", props.data);
+
+// Lets start destructuring props
+export default function Main({ data }) {
+  console.log("Props: ", data);
   let uniqueGenreArray = [];
-  movieData.forEach((movie) => {
+  // This will run on every render of the Main component
+  // That's not a problem right now since it only receives a single prop of data
+  // and when that data changes, we do need to re-render. But we should use this
+  // as a chance to learn about memoization. Change this implementation to use
+  // useMemo. To get you started, it will look like this:
+  // const uniqueGenreArray= useMemo(() => {
+  // ... your code to compute uniqueGenreArray
+  // });
+  data.forEach((movie) => {
     if (
-      !uniqueGenreArray.some((genre) => genre === movie.genre.split("|")[0])
+      !uniqueGenreArray.some((genre) => genre === movie.Genre.split(",")[0])
     ) {
-      uniqueGenreArray.push(movie.genre.split("|")[0]);
+      uniqueGenreArray.push(movie.Genre.split(",")[0]);
     }
   });
+
+  // Same thing here about using a useMemo
+  // const sortedGenreMovies = useMemo(() => {
+  // ... your code to compute sortedGenreMovies
+  // })
   let sortedGenreMovies = {};
-  movieData.forEach((movie) => {
+  data.forEach((movie) => {
     // First we get the movie genre
-    const movieGenre = movie.genre.split("|")[0];
+    const movieGenre = movie.Genre.split(",")[0];
     // Now lets get the current value for this genre.
     // It might be undefined if this is a new genre, or it might be an array
     // Since we need an array, we can use || to assign an empty array if its undefined
@@ -34,7 +48,7 @@ export default function Main(props) {
             {/* Each movie */}
             {Object.values(
               sortedGenreMovies[genre].map((movie) => (
-                <Movie key={movie.id} img={movie.image} title={movie.title} />
+                <Movie key={movie.imdbID} img={movie.Poster} title={movie.Title} />
               ))
             )}
           </div>
