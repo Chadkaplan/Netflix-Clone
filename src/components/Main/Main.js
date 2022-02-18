@@ -4,6 +4,24 @@ import Movie from "../Movie/Movie";
 // Lets start destructuring props
 export default function Main({ data }) {
   console.log("Props: ", data);
+  useMemo(() => {
+    let uniqueGenreArray = [];
+  // This will run on every render of the Main component
+  // That's not a problem right now since it only receives a single prop of data
+  // and when that data changes, we do need to re-render. But we should use this
+  // as a chance to learn about memoization. Change this implementation to use
+  // useMemo. To get you started, it will look like this:
+  // const uniqueGenreArray= useMemo(() => {
+  // ... your code to compute uniqueGenreArray
+  // });
+  data.forEach((movie) => {
+    if (
+      !uniqueGenreArray.some((genre) => genre === movie.Genre.split(",")[0])
+    ) {
+      uniqueGenreArray.push(movie.Genre.split(",")[0]);
+    }
+  });
+  }, [uniqueGenreArray])
   let uniqueGenreArray = [];
   // This will run on every render of the Main component
   // That's not a problem right now since it only receives a single prop of data

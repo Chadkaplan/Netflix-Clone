@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Main from "./components/Main/Main";
-// Remove unused imports
 
 const API_KEY = process.env.REACT_APP_API_KEY;
 let API_URL = "the+a";
-// remove unused variables
 
 function App() {
   const [moviesList, setMoviesList] = useState([]);
@@ -32,12 +30,10 @@ function App() {
           })
         )
           .then((values) => setMoviesList(values))
-          // lets remain consistent with how we declare functions
           .catch((error) => {
             console.log("Requestfailed", error);
           });
       })
-      // lets remain consistent with how we declare functions
       .catch((error) => {
         console.log("Requestfailed", error);
       });
