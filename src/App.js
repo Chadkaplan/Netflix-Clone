@@ -42,7 +42,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Main data={moviesList} />
+      <Main movieData={moviesList} />
     </div>
   );
 }
