@@ -1,27 +1,19 @@
 import "./main.css";
 import Movie from "../Movie/Movie";
-import { useMemo } from "react";
-
-export default function Main({ movieData }) {
-  console.log("Props: ", movieData);
-  // This will run on every render of the Main component
-  // That's not a problem right now since it only receives a single prop of data
-  // and when that data changes, we do need to re-render. But we should use this
-  // as a chance to learn about memoization. Change this implementation to use
-  // useMemo. To get you started, it will look like this:
-  // const uniqueGenreArray= useMemo(() => {
-  // ... your code to compute uniqueGenreArray
-  // });
-  const uniqueGenreArray = useMemo((movieData) => {
-  movieData.forEach((movie) => {
-    if (
-      !uniqueGenreArray.some((genre) => genre === movie.Genre.split(",")[0])
-    ) {
-      uniqueGenreArray.push(movie.Genre.split(",")[0]);
-    }
-  });
+import {useMemo} from "react"
+// Lets start destructuring props
+export default function Main({ data }) {
+  console.log("Props: ", data);
+  const memoGenreArray = useMemo(() => {
+    let uniqueGenreArray =[]
+    data.forEach((movie) => {
+      if (
+        !uniqueGenreArray.some((genre) => genre === movie.Genre.split(",")[0])
+      ) {
+        uniqueGenreArray.push(movie.Genre.split(",")[0]);
+      }
+    })
   })
-
   // This will run on every render of the Main component
   // That's not a problem right now since it only receives a single prop of data
   // and when that data changes, we do need to re-render. But we should use this
@@ -29,21 +21,13 @@ export default function Main({ movieData }) {
   // useMemo. To get you started, it will look like this:
   // const uniqueGenreArray= useMemo(() => {
   // ... your code to compute uniqueGenreArray
-  // });
-  movieData.forEach((movie) => {
-    if (
-      !uniqueGenreArray.some((genre) => genre === movie.Genre.split(",")[0])
-    ) {
-      uniqueGenreArray.push(movie.Genre.split(",")[0]);
-    }
-  });
-
+  // });  
   // Same thing here about using a useMemo
   // const sortedGenreMovies = useMemo(() => {
   // ... your code to compute sortedGenreMovies
   // })
   let sortedGenreMovies = {};
-  movieData.forEach((movie) => {
+  data.forEach((movie) => {
     // First we get the movie genre
     const movieGenre = movie.Genre.split(",")[0];
     // Now lets get the current value for this genre.
