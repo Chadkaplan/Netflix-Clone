@@ -38,7 +38,7 @@ function App() {
         console.log("Requestfailed", error);
       });
   }, []);
-
+console.log("Render App")
   return (
     <div className="App">
       <Navbar />
