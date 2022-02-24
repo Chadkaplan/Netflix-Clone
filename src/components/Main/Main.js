@@ -5,7 +5,7 @@ import {useMemo} from "react"
 export default function Main({ data }) {
   console.log("Props: ", data);
   let uniqueGenreArray =[]
-  const memoGenreArray = useMemo(() => {
+  uniqueGenreArray = useMemo(() => {
     data.forEach((movie) => {
       if (
         !uniqueGenreArray.some((genre) => genre === movie.Genre.split(",")[0])
@@ -28,7 +28,7 @@ export default function Main({ data }) {
   // ... your code to compute sortedGenreMovies
   // })
   let sortedGenreMovies = {}
-  const memoSortedMovies = useMemo(() => {
+  sortedGenreMovies = useMemo(() => {
     data.forEach((movie) => {
       // First we get the movie genre
       const movieGenre = movie.Genre.split(",")[0];
@@ -44,7 +44,6 @@ export default function Main({ data }) {
     return sortedGenreMovies
   }, [data])
   console.log("Render Main")
-  console.log("Memo 2", memoSortedMovies)
   return (
     <div className="Main">
       {Object.keys(sortedGenreMovies).map((genre) => (
