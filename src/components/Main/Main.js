@@ -3,7 +3,7 @@ import Movie from "../Movie/Movie";
 import {useMemo} from "react"
 // Lets start destructuring props
 export default function Main({ data }) {
-  console.log("Props: ", data);
+  console.table("Props: ", data);
   let uniqueGenreArray =[]
   uniqueGenreArray = useMemo(() => {
     data.forEach((movie) => {
