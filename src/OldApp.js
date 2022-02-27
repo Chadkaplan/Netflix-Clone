@@ -4,6 +4,7 @@ import Main from "./components/Main/Main";
 
 const API_KEY = process.env.REACT_APP_API_KEY;
 let API_URL = "the+a";
+let page = 1
 
 function App() {
   const [moviesList, setMoviesList] = useState([]);
@@ -17,28 +18,51 @@ function App() {
   * Once you have this implementation working and make sense, we'll refactor these to be separate async functions
   **/
   useEffect(() => {
-    fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${API_URL}`)
+
+  //   {
+  //     let result;
+  //     let promises = [];
+  //     for(let i = 0; i < user_list.length; i++){
+  //         promises.push(make_api_call(user_list[i].Id));
+  //     }
+  //     result = await Promise.all(promises);
+  //     for(let i = 0; i < user_list.length; i++){
+  //         user_list[i]['result'] = result[i];
+  //     }
+  //     return user_list;
+  // }
+
+    let result;
+    let promises =[];
+    // Fetch multiple movie ID's for individual search
+    for (let i = 0; i < 3; i++) {
+
+      fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${API_URL}&page=${i}`)
       .then((res) => res.json())
+      .then(promises.push(result))
       .then((result) => {
         const moviesToQuery = result.Search;
         Promise.all(
           moviesToQuery.map((movie) => {
+            // Fetch each individual movie object
             return fetch(
               `http://www.omdbapi.com/?apikey=${API_KEY}&i=${movie.imdbID}`
+              )
+              .then((res) => res.json())
+            })
             )
-            .then((res) => res.json())
+            .then((values) => setMoviesList(values))
+            .catch((error) => {
+              console.log("Request failed", error);
+            });
           })
-        )
-          .then((values) => setMoviesList(values))
           .catch((error) => {
-            console.log("Requestfailed", error);
+            console.log("Request failed", error);
           });
-      })
-      .catch((error) => {
-        console.log("Requestfailed", error);
-      });
+        }
   }, []);
 console.log("Render App")
+console.log("Multiple API Result: ", resul)
   return (
     <div className="App">
       <Navbar />
