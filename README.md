@@ -1,6 +1,6 @@
 # Netflix Clone
 
-The purpose of this project is to create a Netflix clone to demonstrate an understanding of React skills and practice them in a hands-on project. **offline!**
+The purpose of this project is to create a Netflix clone to demonstrate an understanding of React skills and practice them in a hands-on project.
 
 ## Description
 
@@ -11,6 +11,7 @@ A clone application that mimics many of the features, styling, and concepts of N
  - React
  - Github (version control)
  - BEM CSS Methodology
+ - OMDB API fetch calls
 
 To inspect the project, you can fork and run:
 
