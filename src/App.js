@@ -17,20 +17,19 @@ function App() {
    * Once you have this implementation working and make sense, we'll refactor these to be separate async functions
    **/
   useEffect(() => {
-   let resultsArr = [];
     let fetchAPI = (index) => {
       fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${API_URL}&page=${index}`)
         .then((res) => res.json())
         .then((result) => {
-          resultsArr.push(result.Search)
+          const moviesToQuery = result.Search;
           Promise.all(
-            resultsArr.map((movie) => {
+            moviesToQuery.map((movie) => {
               return fetch(
                 `http://www.omdbapi.com/?apikey=${API_KEY}&i=${movie.imdbID}`
               ).then((res) => res.json());
             })
           )
-            .then((values) => setMoviesList(values))
+          .then((values) => setMoviesList((currentValues)=> [...currentValues, ...values]))
             .catch((error) => {
               console.log("Requestfailed", error);
             });
@@ -39,12 +38,11 @@ function App() {
           console.log("Requestfailed", error);
         });
     };
-    for (let index = 0; index < 4; index++) {
+    for (let index = 0; index < 6; index++) {
       fetchAPI(index)
     }
   }, []);
   console.log("Render App");
-  console.log(resultsArr);
   return (
     <div className="App">
       <Navbar />
