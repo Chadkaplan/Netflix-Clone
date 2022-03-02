@@ -8,34 +8,26 @@ let API_URL = "the+a";
 function App() {
   const [moviesList, setMoviesList] = useState([]);
 
-
   let fetchAPI = async (pages) => {
-        // 10 movies per query to get ID's
-        let paginatedResponse = await fetch(
-          `http://www.omdbapi.com/?apikey=${API_KEY}&s=${API_URL}&page=${pages}`
-        );
-        paginatedResponse = paginatedResponse.json();
-        let moviesToQuery = paginatedResponse.Search;
-        let eachMovie;
-        // Get each movie's full object individually
-        let individualMovies = Promise.all(
-           moviesToQuery.map( async (movie) => {
-           return eachMovie = await fetch(
-              `http://www.omdbapi.com/?apikey=${API_KEY}&i=${movie.imdbID}`
-            );
-            eachMovie = eachMovie.json()
-          })
-        );
-        // Update the state to add each individual movie
-        return (individualMovies = setMoviesList((currentValues) => [
-          ...currentValues,
-          ...values,
-        ]));
-      };
-      // Iterate over this many pages of 10
-      for (let pages = 0; pages < 4; pages++) {
-        fetchAPI(pages);
-      }
+    // 10 movies per query to get ID's
+    let paginatedResponse = await fetch(
+      `http://www.omdbapi.com/?apikey=${API_KEY}&s=${API_URL}`
+    );
+    paginatedResponse = await paginatedResponse.json();
+    let moviesToQuery = paginatedResponse.Search;
+    let eachMovie = Promise.all(
+      moviesToQuery.map(async (movie) => {
+        return (eachMovie = await fetch(
+          `http://www.omdbapi.com/?apikey=${API_KEY}&i=${movie.imdbID}`
+        ));
+      })
+    );
+    await console.log(moviesToQuery);
+    // eachMovie = await eachMovie.json();
+    // setMoviesList(eachMovie);
+  };
+  console.log("API working?", moviesList);
+
   useEffect(() => {
     fetchAPI();
   }, []);
@@ -44,7 +36,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Main data={moviesList} />
+      {/* <Main data={moviesList} /> */}
     </div>
   );
 }
