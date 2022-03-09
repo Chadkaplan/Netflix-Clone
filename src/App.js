@@ -14,29 +14,28 @@ function App() {
       `http://www.omdbapi.com/?apikey=${API_KEY}&s=${API_URL}`
     );
     paginatedResponse = await paginatedResponse.json();
-    let moviesToQuery = paginatedResponse.Search;
-    let eachMovie = Promise.all(
-      moviesToQuery.map(async (movie) => {
-        return (eachMovie = await fetch(
+    let moviesToQuery = await paginatedResponse.Search;
+    let eachMovie
+    eachMovie = await Promise.all(
+      moviesToQuery.map((movie) => {
+         return fetch(
           `http://www.omdbapi.com/?apikey=${API_KEY}&i=${movie.imdbID}`
-        ));
+        ).then((res) => res.json())
+       console.log("Movie logged")
       })
-    );
-    await console.log(moviesToQuery);
-    // eachMovie = await eachMovie.json();
-    // setMoviesList(eachMovie);
-  };
-  console.log("API working?", moviesList);
-
+    )
+    console.log(eachMovie, "Each movie")
+    }
   useEffect(() => {
     fetchAPI();
+    console.log("API working?", moviesList);
   }, []);
 
   console.log("Render App");
   return (
     <div className="App">
       <Navbar />
-      {/* <Main data={moviesList} /> */}
+      <Main data={moviesList} />
     </div>
   );
 }
