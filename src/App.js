@@ -11,27 +11,27 @@ function App() {
   let fetchAPI = async (pages) => {
     // 10 movies per query to get ID's
     let paginatedResponse = await fetch(
-      `http://www.omdbapi.com/?apikey=${API_KEY}&s=${API_URL}`
+      `http://www.omdbapi.com/?apikey=${API_KEY}&s=${API_URL}&page=${pages}`
     );
+    console.log(paginatedResponse);
     paginatedResponse = await paginatedResponse.json();
-    let moviesToQuery = await paginatedResponse.Search;
-    let eachMovie
+    let moviesToQuery = paginatedResponse.Search;
+    let eachMovie;
     eachMovie = await Promise.all(
       moviesToQuery.map((movie) => {
-         return fetch(
+        return fetch(
           `http://www.omdbapi.com/?apikey=${API_KEY}&i=${movie.imdbID}`
-        ).then((res) => res.json())
-       console.log("Movie logged")
+        ).then((res) => res.json());
       })
-    )
-    console.log(eachMovie, "Each movie")
-    }
+    ).then((values) =>
+      setMoviesList((currentValues) => [...currentValues, ...values])
+    );
+  };
   useEffect(() => {
-    fetchAPI();
-    console.log("API working?", moviesList);
+    for (let pages = 0; pages < 6; pages++) {
+      fetchAPI(pages);
+    }
   }, []);
-
-  console.log("Render App");
   return (
     <div className="App">
       <Navbar />

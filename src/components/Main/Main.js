@@ -43,7 +43,7 @@ export default function Main({ data }) {
     });
     return sortedGenreMovies
   }, [data])
-  console.log("Render Main")
+  // console.log("Render Main")
   return (
     <div className="Main">
       {Object.keys(sortedGenreMovies).map((genre) => (
